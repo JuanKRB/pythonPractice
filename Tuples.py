@@ -11,7 +11,7 @@ print(tuple1)
 
 print(tuple1[0:4])
 
-print(len(tuple1))
+print("len", len(tuple1))
 
 ## Para ordenar de menor a mayor
 Ratings = (0, 9, 6, 5, 10, 8, 9, 6, 2)

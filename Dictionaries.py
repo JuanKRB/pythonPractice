@@ -65,3 +65,28 @@ del(inventory["ProductReleaseYear2"])
 
 ## To save they keys in a list
 print(list(inventory.keys()))
+
+inventory.update({"ProductName2": "Car"})
+
+print(inventory)
+
+# Clear all
+inventory.clear()
+
+print(inventory)
+
+
+person = {"name": "Juan", "age": 20}
+
+personCopy = person.copy()
+
+print(personCopy)
+
+personCopy2 = dict(person)
+
+print(personCopy2)
+
+# Convert each key and value to a list
+info = list(person.items())
+
+print(info)

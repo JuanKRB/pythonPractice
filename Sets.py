@@ -1,4 +1,6 @@
 # No duplicates elements
+# Can't have others in it
+# But tuplets can because they can't change  (siempre y cuando todos sus elementos sean hashables)
 """
 aaaa
 """
@@ -8,7 +10,7 @@ set1 = {"pop", "rock", "soul", "hard rock", "rock", "R&B", "rock", "disco"}
 print(set1)
 
 
-album_list = [ "Michael Jackson", "Michael Jackson", "Thriller", 1982, "00:42:19", \
+album_list = [ "Michael Jackson", "Michael Jackson", "Thriller", 1982, "00:42:19",
               "Pop, Rock, R&B", 46.0, 65, "30-Nov-82", None, 10.0]
 album_set = set(album_list)
 print(album_set)
@@ -85,3 +87,32 @@ album_set22 = set([ "AC/DC", "Back in Black", "The Dark Side of the Moon"])
 print(album_set12.union(album_set22))
 
 print(album_set12.issubset(album_set22))
+
+V = {'A', 'B'}
+V.add('C')
+
+print(V)
+
+# To delete
+V.discard("apple")
+
+# Remove the last one and returns it
+removed_fruit = V.pop()
+print(removed_fruit)
+
+# To delete, Raises a `KeyError` if the element is not found.
+# V.remove("banana")
+
+
+"""
+combined = fruits.union(colors) 
+common = fruits.intersection(colors) 
+unique_to_fruits = fruits.difference(colors) 
+sym_diff = fruits.symmetric_difference(colors)
+"""
+
+V.update(["kiwi", "grape"])
+
+V.update(["kiwi3", "grape6"])
+
+print(V)
