@@ -13,10 +13,10 @@ print(tuple1[0:4])
 
 print(len(tuple1))
 
-
+## Para ordenar de menor a mayor
 Ratings = (0, 9, 6, 5, 10, 8, 9, 6, 2)
 RatingsSorted = sorted(Ratings)
-print(RatingsSorted)
+print("RatingsSorted: ",  RatingsSorted)
 
 
 NestedT = (1, 2, ("pop", "rock") ,(3,4),("disco",(1,2)))
