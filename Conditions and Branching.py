@@ -10,6 +10,14 @@
 # When there are multiple letters, the first letter takes precedence in ordering:
 'BA' > 'AB'
 
+age1 = 2
+
+if(age1 == 2):
+    print("age1: 2")
+
+if(age1 != 2):
+    print("Age's not 2")
+
 ## Branching
 
 age = 19
@@ -51,6 +59,24 @@ if not(albumYear3 == 1984):
     print("It's not 1984")
 
 print("///////////")
+
+user_choice = "Withdraw Cash"
+if user_choice == "Withdraw Cash":
+    amount = input("Enter the amount to withdraw: ")
+    if amount % 10 == 0:
+        print("dispense_cash(amount)")
+    else:
+        print("Please enter a multiple of 10.")
+else:
+    print("Thank you for using the ATM.")
+
+print("///////////")
+
+friend1_likes_comedy = True
+friend2_likes_action = False
+friend3_likes_drama = False
+if friend1_likes_comedy or friend2_likes_action or friend3_likes_drama:
+    print("choose a movie()")
 
 
 # Practice
