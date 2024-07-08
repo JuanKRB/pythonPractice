@@ -10,6 +10,9 @@
 # When there are multiple letters, the first letter takes precedence in ordering:
 'BA' > 'AB'
 
+# The equality operator is case-sensitive
+print("Case-sensitive: ", "a" == "A")
+
 age1 = 2
 
 if(age1 == 2):
@@ -72,6 +75,9 @@ else:
 
 print("///////////")
 
+# vars can not only be with numbers
+# 1=2
+
 friend1_likes_comedy = True
 friend2_likes_action = False
 friend3_likes_drama = False
@@ -93,4 +99,6 @@ albumYear = 1974
 
 if(albumYear < 1980) or (albumYear == 1991) or (albumYear == 1993):
     print("This album came out in year: ", albumYear)
+
+
 
